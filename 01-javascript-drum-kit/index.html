@@ -5,9 +5,15 @@
   </head>
   <body>
     <!-- <p>Hello World</p> -->
-    <div class="banner" style="background-image:url('images/drum2.jpg');"></div>
-
-
+    <div class="banner" style="background-image:url('images/drum2.jpg');">
+      <div class="banner-content">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">Clap</span>
+        </div>
+      </div>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
     <script src="drum.js"></script>
   </body>
 </html>

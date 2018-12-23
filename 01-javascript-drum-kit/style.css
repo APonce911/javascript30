@@ -5,6 +5,7 @@ body{
 }
 kbd {
   display: block;
+  font-size: 2em;
 }
 .banner {
   color:white;

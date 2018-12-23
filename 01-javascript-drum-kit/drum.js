@@ -9,6 +9,6 @@ function playAudio(event) {
 const changeButton = (event) => {
 };
 
-button.addEventListener("click", changeButton);
-button.addEventListener("click", playAudio);
-
+// button.addEventListener("click", changeButton);
+// button.addEventListener("click", playAudio);
+document.addEventListener("keyup", playAudio);

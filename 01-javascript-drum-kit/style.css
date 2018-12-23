@@ -3,7 +3,9 @@ body{
   padding:0px;
 
 }
-
+kbd {
+  display: block;
+}
 .banner {
   color:white;
   display:flex;
@@ -17,17 +19,21 @@ body{
 }
 
 .key {
-background-color:transparent;
-border: 1px solid;
-border-radius: 3px;
-border-color: black;
-padding: 10px;
-width: 60px;
-height:60px;
+  display:flex;
+  background-color:transparent;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: black;
+  padding: 10px;
+  width: 60px;
+  height:60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .key:hover{
-border: 2px solid;
-border-color: black;
+  border: 2px solid;
+  border-color: black;
 
 }

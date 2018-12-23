@@ -1,14 +1,19 @@
-// TODO: React to a click on the button!
-const button = document.querySelector(".key");
+// TODO: React to a click on the key!
+const key = document.querySelector(".key");
 const audio = document.getElementById("sound");
 
 function playAudio(event) {
-  audio.play();
+  // if (key.dataset.key === '65') {
+  console.log(event.code)
+  if (event.code === 'KeyA') {
+    // document.getElementById("sound").play();
+    audio.play();
+  }
 }
 
-const changeButton = (event) => {
+const changekey = (event) => {
 };
 
-// button.addEventListener("click", changeButton);
-// button.addEventListener("click", playAudio);
+// key.addEventListener("click", changekey);
+// key.addEventListener("click", playAudio);
 document.addEventListener("keyup", playAudio);

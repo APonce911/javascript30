@@ -16,6 +16,18 @@ body{
   height:100vh;
 }
 
-.key{
+.key {
+background-color:transparent;
+border: 1px solid;
+border-radius: 3px;
+border-color: black;
+padding: 10px;
+width: 60px;
+height:60px;
+}
+
+.key:hover{
+border: 2px solid;
+border-color: black;
 
 }

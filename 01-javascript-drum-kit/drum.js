@@ -10,3 +10,8 @@ function playAudio(event) {
 // };
 
 document.addEventListener("keyup", playAudio);
+
+// #TODO
+// 1- Play when clicked, without waiting the end of sound
+// 2- Add Gradient to banner
+// 3- Change key style when clicked

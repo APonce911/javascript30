@@ -10,10 +10,12 @@ function playAudio(event) {
 }
 
 // const changekey = (event) => {
+  // insert class 'clicked' on key
+  // timeout
+  // remove class 'clicked'
 // };
 
 document.addEventListener("keyup", playAudio);
 
 // #TODO
-// 1- Play when clicked, without waiting the end of sound
-// 3- Change key style when clicked
+// 1- Change key style when clicked

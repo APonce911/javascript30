@@ -43,9 +43,7 @@ span {
   flex-direction: column;
   margin:15px;
 }
-/*
-.key:hover{
-  border: 2px solid;
-  border-color: black;
 
-}*/
+.clicked {
+
+}

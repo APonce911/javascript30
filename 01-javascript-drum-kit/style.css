@@ -27,6 +27,7 @@ span {
   display:flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .key {
@@ -45,5 +46,9 @@ span {
 }
 
 .clicked {
-
+  border: 3px solid;
+  border-radius: 3px;
+  border-color: #BAFF29;
+  width: 70px;
+  height:70px;
 }

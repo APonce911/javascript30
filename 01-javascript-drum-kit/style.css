@@ -6,6 +6,11 @@ body{
 kbd {
   display: block;
   font-size: 2em;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+span {
+  font-family: 'Roboto', sans-serif;
+  color:#BAFF29;
 }
 .banner {
   color:white;

@@ -10,12 +10,10 @@ function playAudio(event) {
 
 function changeClass(event) {
   const key = document.querySelector(`div[data-key=${event.code}]`);
-  // insert class 'clicked' on key
-  key.classList.add('clicked');
-  // timeout
-  // setTimeout(() => key.classList.remove('clicked') , 500);
-  // remove class 'clicked'
-  // current.classList.remove('active');
+  if (key) {
+    key.classList.add('clicked');
+    setTimeout(() => key.classList.remove('clicked') , 100);
+  }
 }
 
 document.addEventListener("keyup", playAudio);

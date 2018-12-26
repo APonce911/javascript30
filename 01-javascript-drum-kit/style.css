@@ -44,12 +44,11 @@ span {
   align-items: center;
   flex-direction: column;
   margin:15px;
-  /*transition: all .07s;*/
-
+  transition: all .07s; /*to scale gradually*/
 }
 
 .clicked {
-  /*border: 3px solid;*/
+  box-shadow: 0 0 10px #BAFF29;
   border-color: #BAFF29;
   transform: scale(1.1)
 }

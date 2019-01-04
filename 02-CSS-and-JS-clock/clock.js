@@ -1,0 +1,10 @@
+var day = new Date();
+var hrs = day.getHours();
+var min = day.getMinutes();
+var sec = day.getSeconds();
+console.log(hrs);
+console.log(min);
+console.log(sec);
+// document.getElementById('some-id');
+// document.getElementById('some-id');
+// document.getElementById('some-id');

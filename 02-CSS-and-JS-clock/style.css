@@ -5,6 +5,14 @@ width: 100%;
 height: 100vh;
   /*background-color:grey;*/
 }
-.banner{
+.banner {
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
+  background-size:cover;
+  background-position: center center;
+  height:100vh;
 }

@@ -23,3 +23,27 @@ height: 100vh;
   align-items: center;
   justify-content: center;
 }
+.clock-frame {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 50%;
+  width:400px;
+  height:400px;
+  border:19px solid gray;
+  padding:0;
+  margin:0;
+  z-index: 1;
+}
+.clock-interior {
+  /*background-color: transparent;
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  border:0;
+  padding:0;
+  margin:0;*/
+  z-index: 2;
+}

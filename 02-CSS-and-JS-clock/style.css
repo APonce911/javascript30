@@ -16,3 +16,10 @@ height: 100vh;
   background-position: center center;
   height:100vh;
 }
+.banner-content {
+  display:flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -56,16 +56,24 @@ height: 100vh;
   margin:0;
   z-index: 2;
 }
+#time-number {
+  position: absolute;
+  top:15px;
+  left:15px;
+}
 
 .hour{
   background-color: black;
   width:100px;
   height: 20px;
-  transform: rotate(15deg);
+
+  /*transform: rotate(1deg);*/
+  transform-origin: 0% 50%;
+
   z-index: 3;
 
 }
-.minute{
+/*.minute{
   background-color: black;
   width:170px;
   height: 10px;
@@ -79,3 +87,4 @@ height: 100vh;
   z-index: 5;
 
 }
+*/

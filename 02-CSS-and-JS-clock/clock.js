@@ -5,13 +5,13 @@
 // console.log(min);
 // console.log(sec);
 
-var HourAngle = 0;
+var secondAngle = 0;
 function updateClock(){
   var day = new Date();
-  HourAngle += 1;
   document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
-  document.querySelector('.hour').style.transform = `rotate(${HourAngle}deg)`;
+  document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
 
   setTimeout(updateClock, 1000);
+  secondAngle += 360/60;
 }
 updateClock();

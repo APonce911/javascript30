@@ -72,7 +72,7 @@ height: 100vh;
   z-index: 3;
 
 }
-/*.minute{
+.minute{
   background-color: black;
   width:10px;
   height: 170px;
@@ -80,10 +80,14 @@ height: 100vh;
 
 }
 .second{
+  /*position:absolute;
+  top:50%;
+  left:50%;*/
   background-color: black;
   width:5px;
   height: 170px;
+  transform-origin: 50% 100%;
   z-index: 5;
 
 }
-*/
+

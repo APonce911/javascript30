@@ -56,23 +56,26 @@ height: 100vh;
   margin:0;
   z-index: 2;
 }
+
 .hour{
   background-color: black;
   width:100px;
   height: 20px;
-}
-.hour{
-  background-color: black;
-  width:100px;
-  height: 20px;
+  transform: rotate(15deg);
+  z-index: 3;
+
 }
 .minute{
   background-color: black;
   width:170px;
   height: 10px;
+  z-index: 4;
+
 }
 .second{
   background-color: black;
   width:170px;
   height: 5px;
+  z-index: 5;
+
 }

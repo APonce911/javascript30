@@ -5,9 +5,10 @@
 // console.log(min);
 // console.log(sec);
 
+var HourAngle = 0;
 function updateClock(){
   var day = new Date();
-  var HourAngle = 20;
+  HourAngle += 1;
   document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
   document.querySelector('.hour').style.transform = `rotate(${HourAngle}deg)`;
 

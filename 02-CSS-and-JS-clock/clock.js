@@ -6,7 +6,7 @@
 // console.log(sec);
 
 function updateClock(){
-var day = new Date();
+  var day = new Date();
   document.getElementById('hour').innerText = day.getHours() + "-";
   document.getElementById('minute').innerText = day.getMinutes() + "-";
   document.getElementById('second').innerText = day.getSeconds();

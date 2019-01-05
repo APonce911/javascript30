@@ -7,9 +7,10 @@
 
 function updateClock(){
   var day = new Date();
-  document.getElementById('hour').innerText = day.getHours() + "-";
-  document.getElementById('minute').innerText = day.getMinutes() + "-";
-  document.getElementById('second').innerText = day.getSeconds();
+  var HourAngle = 20;
+  document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
+  document.querySelector('.hour').style.transform = `rotate(${HourAngle}deg)`;
+
   setTimeout(updateClock, 1000);
 }
 updateClock();

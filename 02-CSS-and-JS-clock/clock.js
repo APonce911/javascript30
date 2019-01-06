@@ -4,8 +4,12 @@
 // console.log(hrs);
 // console.log(min);
 // console.log(sec);
-
-var secondAngle = 0;
+function setClock(){
+  var day = new Date();
+  var secondAngle = day.getSeconds()* 360/60 + 180;
+  document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
+  // return
+}
 // var minuteAngle = 0;
 // var hourAngle = 0;
 
@@ -19,4 +23,5 @@ function updateClock(){
   // minuteAngle += 360/(60*60);
   // hourAngle += 360/(60*60*60);
 }
-updateClock();
+setClock();
+// updateClock();

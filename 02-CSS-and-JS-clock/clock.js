@@ -11,7 +11,7 @@ function setClock(){
 
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
   document.querySelector('.minute').style.transform = `rotate(${minuteAngle}deg)`;
-  return {secondAngle}
+  return {secondAngle, minuteAngle}
 }
 // var minuteAngle = 0;
 // var hourAngle = 0;
@@ -21,16 +21,18 @@ function updateClock(){
 
   const initialTime = setClock();
   let secondAngle = initialTime.secondAngle
+  let minuteAngle = initialTime.minuteAngle
 
   console.log(initialTime)
   console.log(initialTime.secondAngle)
 
   document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
+  document.querySelector('.minute').style.transform = `rotate(${minuteAngle}deg)`;
 
   setTimeout(updateClock, 1000);
   secondAngle += 360/60;
-  // minuteAngle += 360/(60*60);
+  minuteAngle += 360/(60*60);
   // hourAngle += 360/(60*60*60);
 }
 // setClock();

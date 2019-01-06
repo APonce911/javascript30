@@ -42,12 +42,11 @@ height: 100vh;
 
 }
 .clock-interior {
-  /*background-color: transparent;*/
   display:flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  position:relative;
   border-radius: 50%;
   width:400px;
   height:400px;
@@ -80,13 +79,14 @@ height: 100vh;
 
 }
 .second{
-  /*position:absolute;
+  transform-origin: 100% 0%;
+  position:absolute;
   top:50%;
-  left:50%;*/
+  left:50%;
   background-color: black;
   width:5px;
   height: 170px;
-  transform-origin: 50% 100%;
+  transition: 0.5s;
   z-index: 5;
 
 }

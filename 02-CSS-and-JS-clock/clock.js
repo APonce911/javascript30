@@ -5,9 +5,12 @@
 // console.log(min);
 // console.log(sec);
 function setClock(){
-  var day = new Date();
-  var secondAngle = day.getSeconds()* 360/60 + 180;
+  const day = new Date();
+  const secondAngle = day.getSeconds()* 360/60 + 180;
+  const minuteAngle = day.getMinutes()* 360/60 + 180;
+
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
+  document.querySelector('.minute').style.transform = `rotate(${minuteAngle}deg)`;
   return {secondAngle}
 }
 // var minuteAngle = 0;

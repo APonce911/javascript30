@@ -7,7 +7,7 @@
 function setClock(){
   const day = new Date();
   const secondAngle = day.getSeconds()* 360/60 + 180;
-  const minuteAngle = day.getMinutes()* 360/60 + 180;
+  const minuteAngle = (day.getMinutes() + day.getSeconds()/60)* 360/60 + 180;
   const hourAngle = (day.getHours() + day.getMinutes()/60 - 12) * 30 + 180;
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
   document.querySelector('.minute').style.transform = `rotate(${minuteAngle}deg)`;

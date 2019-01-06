@@ -8,13 +8,20 @@ function setClock(){
   var day = new Date();
   var secondAngle = day.getSeconds()* 360/60 + 180;
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
-  // return
+  return {secondAngle}
 }
 // var minuteAngle = 0;
 // var hourAngle = 0;
 
 function updateClock(){
-  var day = new Date();
+  const day = new Date();
+
+  const initialTime = setClock();
+  let secondAngle = initialTime.secondAngle
+
+  console.log(initialTime)
+  console.log(initialTime.secondAngle)
+
   document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
 
@@ -23,5 +30,5 @@ function updateClock(){
   // minuteAngle += 360/(60*60);
   // hourAngle += 360/(60*60*60);
 }
-setClock();
-// updateClock();
+// setClock();
+updateClock();

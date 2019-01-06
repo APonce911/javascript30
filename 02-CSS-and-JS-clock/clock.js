@@ -23,10 +23,6 @@ let hourAngle = initialTime.hourAngle
 
 function updateClock(){
 
-  console.log(initialTime)
-  console.log(hourAngle)
-
-  document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
   document.querySelector('.minute').style.transform = `rotate(${minuteAngle}deg)`;
   document.querySelector('.hour').style.transform = `rotate(${hourAngle}deg)`;

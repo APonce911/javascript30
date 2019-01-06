@@ -15,15 +15,16 @@ function setClock(){
   return {day, secondAngle, minuteAngle, hourAngle}
 }
 
+const initialTime = setClock();
+const day = initialTime.day;
+let secondAngle = initialTime.secondAngle
+let minuteAngle = initialTime.minuteAngle
+let hourAngle = initialTime.hourAngle
+
 function updateClock(){
-  const initialTime = setClock();
-  const day = initialTime.day;
-  let secondAngle = initialTime.secondAngle
-  let minuteAngle = initialTime.minuteAngle
-  let hourAngle = initialTime.hourAngle
 
   console.log(initialTime)
-  console.log(initialTime.hourAngle)
+  console.log(hourAngle)
 
   document.getElementById('time-number').innerText = day.getHours() + "-" + day.getMinutes() + "-" + day.getSeconds();
   document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;

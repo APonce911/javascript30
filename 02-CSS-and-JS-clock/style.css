@@ -79,7 +79,7 @@ height: 100vh;
 }
 
 .pointer{
-  background-color: black;
+  background-color: #f9a9a9;
   transform-origin: 50% 0%;
   position:absolute;
   top:50%;

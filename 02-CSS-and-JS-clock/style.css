@@ -61,7 +61,7 @@ height: 100vh;
   left:15px;
 }
 .hour{
-  width:20px;
+  width:14px;
   height: 100px;
   /*z-index: 3;*/
 
@@ -85,5 +85,6 @@ height: 100vh;
   top:50%;
   left:50%;
   transition: 0.5s;
+  border-radius: 5px;
   /*transform: rotate(1deg);*/
 }

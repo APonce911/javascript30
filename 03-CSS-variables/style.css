@@ -1,6 +1,13 @@
 /*
   misc styles, nothing to do with CSS variables
 */
+:root {
+  --page-spacing: ;
+  --page-blur: ;
+  --page-color: ;
+
+}
+
 body {
   text-align: center;
   background: #193549;

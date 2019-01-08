@@ -2,9 +2,9 @@
   misc styles, nothing to do with CSS variables
 */
 :root {
-  --page-spacing: ;
-  --page-blur: ;
-  --page-color: ;
+  --page-spacing: 15px ;
+  --page-blur:5px ;
+  --page-color: #ffaaaa;
 
 }
 

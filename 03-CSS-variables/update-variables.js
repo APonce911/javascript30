@@ -8,10 +8,10 @@ function updateSpacing() {
   image.style.marginLeft = `${spacing.value}px`;
   console.log(spacing.value);
 }
-// function updateBlur() {
-  // image.style.filter = `blur(${blur.value}px)`;
-  // console.log(blur.value);
-// }
+function updateBlur() {
+  image.style.filter = `blur(${blur.value}px)`;
+  console.log(blur.value);
+}
 spacing.addEventListener("change", updateSpacing);
 // blur.addEventListener("change", updateBlur);
 

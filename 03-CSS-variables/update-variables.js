@@ -13,5 +13,5 @@ function updateBlur() {
   console.log(blur.value);
 }
 spacing.addEventListener("change", updateSpacing);
-// blur.addEventListener("change", updateBlur);
+blur.addEventListener("change", updateBlur);
 

@@ -12,6 +12,10 @@ function updateBlur() {
   image.style.filter = `blur(${blur.value}px)`;
   console.log(blur.value);
 }
+function updateBase() {
+  // document.style.background = `#${base.value})`;
+  console.log(base.value);
+}
 spacing.addEventListener("change", updateSpacing);
 blur.addEventListener("change", updateBlur);
 

@@ -1,6 +1,6 @@
-// document.querySelector('.second').style.transform = `rotate(${secondAngle}deg)`;
 let spacing = document.getElementById('spacing');
 let blur = document.getElementById('blur');
+let base = document.getElementById('base');
 const image = document.querySelector(`img`);
 
 function updateSpacing() {

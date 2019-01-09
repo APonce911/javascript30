@@ -18,4 +18,5 @@ function updateBase() {
 }
 spacing.addEventListener("change", updateSpacing);
 blur.addEventListener("change", updateBlur);
+base.addEventListener("change", updateBase);
 

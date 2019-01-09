@@ -13,7 +13,7 @@ function updateBlur() {
   console.log(blur.value);
 }
 function updateBase() {
-  // document.style.background = `#${base.value})`;
+  document.body.style.background = base.value;
   console.log(base.value);
 }
 spacing.addEventListener("change", updateSpacing);

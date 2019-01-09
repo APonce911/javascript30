@@ -7,4 +7,5 @@ function updateSpacing() {
   image.style.marginLeft = `${spacing.value}px`;
   console.log(spacing.value);
 }
-// spacing.addEventListener("change", updateSpacing);
+
+spacing.addEventListener("change", updateSpacing);

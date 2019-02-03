@@ -23,7 +23,7 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
     console.log('hello')
-
+    inventors.filter( x => console.log(x['year']))
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
 

@@ -52,10 +52,12 @@ const deaths = inventors.map( inventor => inventor['passed']).reduce(reducer)
 console.log(deaths - births)
 
 // 5. Sort the inventors by years lived
-console.log('Sort by years lived');
-inventors.sort( (a, b) => (a['passed'] - a['year']) - (b['passed'] - b['year']));
-console.log(inventors) ;
 
+console.log('Sort by years lived');
+// inventors.sort( (a, b) => (a['passed'] - a['year']) - (b['passed'] - b['year']));
+inventors.map( inventor => inventor['years_lived'] = inventor['passed']- inventor['year'])
+inventors.sort( (a, b) => a['years_lived'] - b['years_lived']);
+console.log(inventors) ;
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris

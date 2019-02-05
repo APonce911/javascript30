@@ -42,6 +42,8 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+    // I will consider the sum of all years lived
+
 
     // 5. Sort the inventors by years lived
 

@@ -68,4 +68,7 @@ console.log(inventors) ;
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
+console.log('Reduce data array')
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+const concatenated_data = data.reduce(reducer)
+console.log(concatenated_data)

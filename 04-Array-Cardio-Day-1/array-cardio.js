@@ -65,7 +65,9 @@ console.log(inventors) ;
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
-
+console.log('Sort people by last name');
+people.sort();
+console.log(people) ;
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 console.log('Reduce data array')
